@@ -5,7 +5,7 @@ from jinja2 import FileSystemLoader, Environment
 import json
 import os
 
-WAVS_ROOT="bahnar_wavs/"
+WAVS_ROOT="audios/"
 file_map=json.load(open(os.path.join(WAVS_ROOT, "file_map.json")))
 file_text=json.load(open(os.path.join(WAVS_ROOT, "file_text.json")))
 rawfile_map=json.load(open(os.path.join(WAVS_ROOT, "rawfile_map.json")))
