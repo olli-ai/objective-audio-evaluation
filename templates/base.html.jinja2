@@ -19,7 +19,7 @@
     <div class="container" id="form_container">
         <form id="theForm" action="{{ form_url }}" method="GET" onsubmit="return preventRepeatedSubmission();">
             <div class="form-group">
-                <label for="name">Your name (tên của bạn): </label>
+                <label for="name">Tên của bạn: </label>
                 <input class="form-control" type="text" inputmode="text" name="name" required>
                 <small class="form-text text-muted">required* (xin điền tên)</small>
             </div>
@@ -30,7 +30,7 @@
             </div>
             {% block form_questions %}{% endblock %}
             <input type="text" name="formid" value="{{ form_id }}" hidden>
-            <input type="text" name="thank" value="Cảm ơn bạn một lần nữa vì đã tham gia thử nghiệm này! (Thank you again for participating in this experiment!)" hidden>
+            <input type="text" name="thank" value="Cảm ơn bạn một lần nữa vì đã tham gia thử nghiệm này!" hidden>
             <input class="btn btn-info btn-lg" type="submit" value="Submit results" id="submitBtn">
             <p class="text-muted">
                 

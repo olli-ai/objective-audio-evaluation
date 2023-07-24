@@ -13,8 +13,8 @@ rawfile_map=json.load(open(os.path.join(WAVS_ROOT, "rawfile_map.json")))
 genfiles_to_gt = {file_map[f]: f for f in file_map}
 scratch_genfiles_to_gt = {rawfile_map[f] for f in rawfile_map}
 
-choosen_files = list(file_map.values())[:3]
-gt_files = list(file_map.keys())[:3]
+choosen_files = list(file_map.values())
+gt_files = list(file_map.keys())
 wavs_folders=[f for f in os.listdir(WAVS_ROOT) if os.path.isdir(os.path.join(WAVS_ROOT,f)) and '.DS' not in f]
 wavs_dict={f: [] for f in wavs_folders}
 
