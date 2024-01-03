@@ -40,7 +40,7 @@ with open('./audios/file_text.json', 'w') as fo:
                 h.update(bytes(line.split('|')[0]+'_eval', 'utf-8'))
                 new_eval = h.hexdigest()+'.wav'
                 new_files[new_GT] = new_eval
-                os.rename(gt_dir + line.split('|')[0] + '.wav', gt_dir + new_GT)
+                # os.rename(gt_dir + line.split('|')[0] + '.wav', gt_dir + new_GT)
                 os.rename(gen_dir + line.split('|')[0] + '_eval.wav', gen_dir + new_eval)
                 print('\"' + new_GT + '\": ' + '\"'+line.split('|')[-1][:-1] + '\",')
 print(new_files)
